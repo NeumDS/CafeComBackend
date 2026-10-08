@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-block: 0;
+}
+
+.favoritar {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.favorito {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cabecalho {
+  background-color: #6f4e37;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lista {
+  display: flex;
+  gap: 30px;
+}
+
+.texto-logo {
+  color: #fff;
+  font-weight: bold;
+}
+
+.texto-item {
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.intro {
+  background-color: #f5efe6;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ver-menu-btn {
+  background-color: #c8752d;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  width: 140px;
+  cursor: pointer;
+}
+
+.rodape {
+  background-color: #6f4e37;
+  padding: 10px 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.cards {
+  background-color: #fff;
+  padding: 20px 40px;
+  flex: 1;
+}
+
+.nosso-cafe-texto {
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: #e5dacf 1px solid;
+  width: 260px;
+  min-width: 260px;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.card-imagem {
+  width: 100%;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card-texto-titulo {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.card-texto-descricao {
+  margin-top: 2px;
+}
+
+.card-texto-preco {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #c8752d;
+  font-size: 18px;
+}
+
+/* Botões dentro de cada card */
+.card-botoes {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.pedir-btn {
+  flex: 1;
+  background-color: #c8752d;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.esconder-btn {
+  background-color: #6f4e37;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.esconder-btn:hover {
+  background-color: #5a3f2c;
+}
+
+.status-cafes {
+  margin-top: 16px;
+  padding: 16px 20px;
+  background-color: #f5efe6;
+  border: 1px dashed #c8752d;
+  border-radius: 12px;
+  color: #6f4e37;
+  font-weight: bold;
+}
+
+.status-cafes.erro {
+  background-color: #fdecea;
+  border-color: #c0392b;
+  color: #c0392b;
+}
+
+.status-cafes.escondido {
+  display: none;
+}
+
+.atualizado {
+  margin-top: 12px;
+  color: #6b5b50;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.site {
+  min-height: 100%;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+.intro-titulo {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.intro-descricao {
+  font-size: 18px;
+  color: #6b5b50;
+}
+
+.menu-lista {
+  background-color: #fff;
+  padding: 20px 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5dacf;
+  padding: 12px 0;
+}
+
+.menu-item .preco {
+  font-weight: bold;
+  color: #c8752d;
+}
+
+.voltar-btn {
+  align-self: flex-start;
+  background-color: #c8752d;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
